@@ -7,10 +7,10 @@ public class AddressType {
 	{
 		try{
 			InetAddress a = InetAddress.getByName("224.0.0.0");
-			if(a.isAnyLocalAddress()){
+			if(a.isAnyLocalAddress()){ //to check whether the inetAddress is wild card address or not
 				System.out.println(a + " is a wildcard address");
 			}
-		    if(a.isLoopbackAddress()){
+		    if(a.isLoopbackAddress()){ //used to check whether the inetAddress is loop back address or not
 		    	System.out.println(a + " is a loopback address");
 			}
 			 if(a.isLinkLocalAddress()){
